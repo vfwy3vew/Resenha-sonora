@@ -59,25 +59,27 @@ body {
 }
 
 .input_procurar input[type=text]:focus{
-    border: 3px solid #ffffff;
+    border: 6px solid #ffffff;
 }
 
 
 
 .img_logo img{
-    position: relative;
+    position: absolute;
 
-    top: 20%;
-    left: -40%;
+    top: 2%;
+    left: 5%;
 
     width: 70px;
+
+    -webkit-user-drag: none;
 }
 
 .quadradobarra{
     position: relative;
 
     left: 35%;
-    margin-top: 100px;
+    margin-top: 150px;
 
     background-color: #141414;
 
@@ -99,6 +101,8 @@ iframe {
     display: flex;
     z-index: 2;
 }
+
+
 
 #resultados {
     padding: 20px;
