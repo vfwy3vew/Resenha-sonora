@@ -1,0 +1,5 @@
+Este sistema simples usa o sistema de API do spotify.
+Primeiramente ele pega o input colocado no site, manda pra API do spotify.
+logo em seguida ele pega os dados da musica.
+pega os dados recebidos e faz um iframe correspondente,
+ 
