@@ -1,4 +1,4 @@
-const token = "BQCK9qD3ezBWeChlk_2tCjGCf3vNvLtiRF09O16rDlbeqhF8tJOiBhhkf5jRXzLI0MczTta1sTYyc6K-SRAN6MtmJJbAo7oAThkaYc-U8PQ8MbJ_ZjII6Eklwy6ytvK6eFLGRiexFXy50TPZWZWLzOKp3sJPXMoYFgxwuEpvsB-ZM1HObzXtLeFge-Jr414qw1ecHkp2CBgia-BUGINe2lDOxHbfO95biItKwqhtQP-DwpQ8pOIWWm3TDOI2r-jvJ7F4wk5-8PAHPw1q8Il0t9twhjxRiIh-ksE70n9h_zno9g";
+const token = "BQBmdSu1ocp7L0xKy8raBXV0yCWuXAiI3Pz91QnaHieLocK_xPhCZMrR-iowoW9NjdVskXnmGN_aTYemSKpHwG1L_nLTvQT2hy48eO8ZkNMaORtmX1kLwb1O8Xm9nZyv6yiKcqxz5uVsJKHIjw46TWfz-3OxY5tZ8fOxVjw-PK50UbgmWcZu5Wrs1yCfGItVpvHb9Lg7EbzRW-MIjOOcMlYLWaFLc0GVHSQqubp4bdfbb7YYxuThreyz2p6pwo-Z0s849bzHTCY7HW9Vc_uF3wY8YzG8eW8jZZYWzCH_-Ui-8A";
 
 function search() {
   const query = document.getElementById('procurar').value;
@@ -26,6 +26,8 @@ function search() {
       iframe.allow = "autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture";
       iframe.loading = "lazy";
       iframe.style.borderRadius = "12px";
+      iframe.style.border = "none"
+      iframe.style.background = "black"
       results.appendChild(iframe);
     });
   });

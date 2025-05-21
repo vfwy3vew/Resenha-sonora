@@ -1,55 +1,109 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background: #ffffff;
+    background: #000000;
     color: white;
 }
 
 .input_procurar {
+    position: fixed;
 
+    left: 40%;
+    top: 2%;
     margin: 20px;
 }
 
 .input_procurar input {
-    border-radius: 20px;
-
     border: none;
+    border-radius: 30px;
+
+    background-color: #000000;
+
+    width: 300px;
+    height: 10px;
+    padding: 10px;
+    font-size: 16px;
+    
+    outline: none;
+
+    border: 3px solid #ffffff;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+
 }
 
 .input_procurar button{
     padding: 10px 20px;
     font-size: 16px;
     margin-left: 10px;
-    background-color: #1db954;
+    background-color: #979797;
     color: white;
     border: none;
     cursor: pointer;
 
-    border-radius: 20px;
+    border-radius: 10px;
 
-    background: #59e6ff;
-    background: linear-gradient(90deg,rgba(89, 230, 255, 1) 0%, rgba(255, 41, 162, 1) 100%);
-    
-
-    transition: transform 0.3s ease;
+    background: #979797;
 }
 
 .input_procurar button:hover{
-    transform: scale(1.1);
+    background: #d4d4d4;
+}
+
+.input_procurar input[type=text]{
+    color: aliceblue;
+}
+
+.input_procurar input[type=placeholder]{
+    color: aliceblue;
+}
+
+.input_procurar input[type=text]:focus{
+    border: 3px solid #ffffff;
 }
 
 
-input {
-    width: 300px;
-    padding: 10px;
-    font-size: 16px;
+
+.img_logo img{
+    position: relative;
+
+    top: 20%;
+    left: -40%;
+
+    width: 70px;
+}
+
+.quadradobarra{
+    position: relative;
+
+    left: 35%;
+    margin-top: 100px;
+
+    background-color: #141414;
+
+    border-radius: 20px;
+
+    width: 600px;
+    height: 600px ;
+
+    display: flex;
+    z-index: 0;
 }
 
 iframe {
-    margin: 10px auto;
-    display: block;
+    position: relative;
+
+
+    left: 20%;
+    top: 10%;
+    display: flex;
+    z-index: 2;
 }
 
-.img_logo img{
-    width: 300px;
-}
+#resultados {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
