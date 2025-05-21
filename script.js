@@ -1,8 +1,8 @@
-const token = "BQBuQeUOi4IK_WUFcBZNluwYlOfb3im0b7uZ-V1Sc-tSVlmurtNvJoinn86aYFiS0Q-JsabmR_kFuO5b0wSRAoUelZLST7zt4EpFYKLdXja681ZkvimOaff-cMBJYAXjc5jJI5bp_fVCBE1wCCWq_bWDBPWlW5pd55kiomb9RntK_l0yTcd7WX7zCa_Ir5qYUXl2DqAGIDodEWyUu91ACBgdf3P6Ns8_iaY0XVOHYKUjG0qzLlDO5U5IYSPpvq3RDZtveien6Pv0teXmfk6ySZLugTobPBvS10L9aKOifJ5eVg";
+const token = "BQCK9qD3ezBWeChlk_2tCjGCf3vNvLtiRF09O16rDlbeqhF8tJOiBhhkf5jRXzLI0MczTta1sTYyc6K-SRAN6MtmJJbAo7oAThkaYc-U8PQ8MbJ_ZjII6Eklwy6ytvK6eFLGRiexFXy50TPZWZWLzOKp3sJPXMoYFgxwuEpvsB-ZM1HObzXtLeFge-Jr414qw1ecHkp2CBgia-BUGINe2lDOxHbfO95biItKwqhtQP-DwpQ8pOIWWm3TDOI2r-jvJ7F4wk5-8PAHPw1q8Il0t9twhjxRiIh-ksE70n9h_zno9g";
 
 function search() {
-  const query = document.getElementById('searchInput').value;
-  const results = document.getElementById('results');
+  const query = document.getElementById('procurar').value;
+  const results = document.getElementById('resultados');
   results.innerHTML = "";
 
   fetch(`https://api.spotify.com/v1/search?q=${encodeURIComponent(query)}&type=track&limit=5`, {

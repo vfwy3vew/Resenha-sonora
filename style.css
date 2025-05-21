@@ -1,31 +1,55 @@
 body {
-  font-family: Arial, sans-serif;
-  text-align: center;
-  background: #121212;
-  color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #ffffff;
+    color: white;
 }
 
-.search-box {
-  margin: 20px;
+.input_procurar {
+
+    margin: 20px;
 }
+
+.input_procurar input {
+    border-radius: 20px;
+
+    border: none;
+}
+
+.input_procurar button{
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-left: 10px;
+    background-color: #1db954;
+    color: white;
+    border: none;
+    cursor: pointer;
+
+    border-radius: 20px;
+
+    background: #59e6ff;
+    background: linear-gradient(90deg,rgba(89, 230, 255, 1) 0%, rgba(255, 41, 162, 1) 100%);
+    
+
+    transition: transform 0.3s ease;
+}
+
+.input_procurar button:hover{
+    transform: scale(1.1);
+}
+
 
 input {
-  width: 300px;
-  padding: 10px;
-  font-size: 16px;
-}
-
-button {
-  padding: 10px 20px;
-  font-size: 16px;
-  margin-left: 10px;
-  background-color: #1db954;
-  color: white;
-  border: none;
-  cursor: pointer;
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
 }
 
 iframe {
-  margin: 10px auto;
-  display: block;
+    margin: 10px auto;
+    display: block;
+}
+
+.img_logo img{
+    width: 300px;
 }
