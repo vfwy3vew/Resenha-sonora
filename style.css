@@ -100,6 +100,12 @@ iframe {
     top: 10%;
     display: flex;
     z-index: 2;
+
+    transition: transform .5s ease;
+}
+
+iframe:hover{
+    transform: scale(1.1);
 }
 
 
