@@ -1,4 +1,4 @@
-const token = "BQBgTmvl_DsM5dx26pYi7xActJnzIhitiV__Jw4WTx3CvI1NngD1E3w2CSEBZdEQbWtWzCQUPOii457iPVxYp4ofmDt2_bNrkCnx3qWfCPIlKTR-FuoQPOoQsAM-T-ubKlP24zCgyMFDnv86XUOi7SCTgMGt7YrySgu3OUs5XKVpLiwT8pMLKTzhNbDCjKp70pStvb3KasFrEVp8Pv1SVLBjqPnD12nuMHS2uxeL39-156NdukPOkfLzbc4ZyGfzJDTVSDCDLbwDU2hDmlMRZbz5obUKNIF7wAWbIycgH4ZB0w";
+const token = "BQDfbbVuHGoLbPEjrb7DUWa2h9CFcxNAySqGbIR8LBc5wO5PEq83fisMP8SYRtZv1OBOCWhSBc5Dq6t75Zbm25iNqYNGNU5Flh4q5BcRiBLAs__0A6Qoq0R248ZCKVP91iM5936t0X0p6YtIhdUlU885obInrspj6RH0YxzG52AyEX6-4BLIW7vU2k-ifJybUm0YQX5S-HZcVFF-Zr56290RaxHMj0eyP6yPEG_W3C7X_uE3dfS1_42sv_jeuRKTut7Y9TkIcI1LlzIT1bLujo9BfuirHDqzBw3x38o8W05_Hw";
 
 function search() {
   const query = document.getElementById('procurar').value;
@@ -32,6 +32,3 @@ function search() {
     });
   });
 }
-
-
-console.log('query')
