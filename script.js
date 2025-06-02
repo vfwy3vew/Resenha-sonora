@@ -1,4 +1,14 @@
-const token = "BQDn1RNJTvimpl1W-UGkvJxSbVMaBq4RGfKdgmQt5yHs28NMr3chQyC5hmkLUbcpmSHGTM6d1KvPDgqZiE699Q8FLhLicq6qKtV1h38h8gSAxrL9bH9xwfIELV2g6eC2JRCw1A3eiKXa_O8xOxR9HinfBnSagEaiTrYGkfeP1sQogTs5ENe3E6jVvGGNzyjf6uPvVi8MFqa5XDJvEWsQJ6E3mTq9YhRYcC-SQkTbLHJ1_FUazGFIbQYooOAZQmLLPSEOCa7hErBkRwNB-0ztSrbsabPmif8p0rH_eMDVDZ0rHA";
+const token = "BQCO9ebZmWHRqZubywHfIKjGXDWWNZyZl2WQLkZ2r2HOQaLr3IGYGf0Uo26wIgWItUsQ0lCqmCh42CZYtBIzZ-q0KLwjKmsLfA5WOmW9gCtD8OYy8SnI4YVq8b4k9xS9hft898tYdhVsLhuCaAbF2WV_FExP0IHNJ4VqDW8T45Ms1QCkmo8I4WXbG76V1g3j69uYy09ev6YZK4DS98RFBAUnRWL3MjMVWnlEKhfap0Sj3k0QztRu3q5inu-vlcyRfCadx6lqXL2FXNoXa1dbeUbje_Oy7F7_QBc_0uYcNEH-Hw";
+
+var input = document.getElementById("procurar");
+
+input.addEventListener("keypress", function(event) {
+
+  if (event.key === "Enter") {
+    event.preventDefault();
+    document.getElementById("button_enter").click();
+  }
+});
 
 function search() {
   const query = document.getElementById('procurar').value;
@@ -13,6 +23,8 @@ function search() {
   quadrado.style.display = "none";
   carregamentos.style.display = "none"
   inputs_button.style.top = "40%";
+
+  
 
 
   fetch(`https://api.spotify.com/v1/search?q=${encodeURIComponent(query)}&type=track&limit=5`, {
@@ -30,7 +42,7 @@ function search() {
 
     quadrado.style.display = "block";
     carregamentos.style.display = "block";
-    inputs_button.style.top = "0%";
+    inputs_button.style.top = "3%";
 
     tracks.forEach(track => {
       const iframe = document.createElement('iframe');
@@ -41,7 +53,7 @@ function search() {
       iframe.loading = "lazy";
       iframe.style.borderRadius = "12px";
       iframe.style.border = "none";
-      iframe.style.background = "black";
+
       iframeContainer.appendChild(iframe);
     });
   });

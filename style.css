@@ -21,12 +21,14 @@ html,body {
     overflow-x: hidden;
 }
 
-.input_procurar {
+.input_procurar{
     position: absolute;
 
-    left: 20%;
+    left: 30%;
     top: 40%;
-    transform: translate(50%, 30%);
+
+    transform: translateY(40%);
+    transform: translateX(30%);
 }
 
 .input_procurar input {
@@ -76,7 +78,6 @@ html,body {
     font-style: normal;
 }
 
-
 .img_logo img{
     position: fixed;
 
@@ -88,7 +89,7 @@ html,body {
     -webkit-user-drag: none;
 
     display: flex;
-    transition: transform 3ms ease;
+    transition: transform .5s ease;
 }
 
 .img_logo img:hover{
@@ -105,8 +106,8 @@ html,body {
     display: none;
     background-color: #181818;
     border-radius: 12px;
-    width: 35vw;
-    height: 90vh;
+    width: 500px;
+    height: 600px;
 
     z-index: 1;
 }
@@ -115,7 +116,8 @@ html,body {
     position: absolute;
 
     left: 50%;
-    top: -25%;
+    top: -20%;
+    transform: translateY(-20%);
     transform: translateX(-50%);
     margin-top: 150px;
 }
